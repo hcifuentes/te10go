@@ -1,0 +1,250 @@
+Started GET "/" for 127.0.0.1 at 2017-04-17 17:51:40 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 695ms
+
+
+  
+ActionView::Template::Error (Can't find registration.js in /home/hcifuentes/Escritorio/proyectos/inventory/public/packs/manifest.json. Is webpack still compiling?):
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag "registration" %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__72390073074567719_34852820'
+Started GET "/" for 127.0.0.1 at 2017-04-17 17:51:40 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ActionView::Template::Error (Can't find registration.js in /home/hcifuentes/Escritorio/proyectos/inventory/public/packs/manifest.json. Is webpack still compiling?):
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag "registration" %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__72390073074567719_70121295080560'
+Started GET "/" for 127.0.0.1 at 2017-04-17 17:51:49 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 9ms
+
+
+  
+ActionView::Template::Error (Can't find registration.js in /home/hcifuentes/Escritorio/proyectos/inventory/public/packs/manifest.json. Is webpack still compiling?):
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag "registration" %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__72390073074567719_70121288751140'
+Started GET "/" for 127.0.0.1 at 2017-04-17 17:56:43 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 17:57:24 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (89.9ms)
+Completed 500 Internal Server Error in 92ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00000004384b78>:0x0000000302c800>):
+    1: <%= react_component("Registration")%>
+  
+app/views/main/home.html.erb:1:in `_app_views_main_home_html_erb__3350019048608898564_25279040'
+Started GET "/" for 127.0.0.1 at 2017-04-17 17:59:57 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (94.2ms)
+Completed 500 Internal Server Error in 96ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00000004384b78>:0x007f8cc514d0a8>):
+    1: <%= react_component("Registration")%>
+  
+app/views/main/home.html.erb:1:in `_app_views_main_home_html_erb__3350019048608898564_70121289313680'
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:01:40 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (90.2ms)
+Completed 500 Internal Server Error in 94ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00000004384b78>:0x007f8cc588b5b8>):
+    1: <%= react_component("Registration")%>
+  
+app/views/main/home.html.erb:1:in `_app_views_main_home_html_erb__3350019048608898564_70121293111200'
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:09:24 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (96.6ms)
+Completed 500 Internal Server Error in 99ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00000004384b78>:0x007f8cc4f261f8>):
+    1: <%= react_component("Registration")%>
+  
+app/views/main/home.html.erb:1:in `_app_views_main_home_html_erb__3350019048608898564_70121288185400'
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:11:58 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (87.5ms)
+Completed 500 Internal Server Error in 90ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00000004384b78>:0x000000031d5e90>):
+    1: <%= react_component("Registration")%>
+  
+app/views/main/home.html.erb:1:in `_app_views_main_home_html_erb__3350019048608898564_26131580'
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:14:16 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (78.4ms)
+Completed 500 Internal Server Error in 81ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x00000004384b78>:0x007f8cc48fbaf8>):
+    1: <%= react_component("Registration")%>
+  
+app/views/main/home.html.erb:1:in `_app_views_main_home_html_erb__3350019048608898564_70121286517320'
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:14:38 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 579ms (Views: 434.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:14:49 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:15:00 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:15:06 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:15:29 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:16:10 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:16:21 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:16:26 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 22.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 18:16:42 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 7.9ms)
+
+
+  [1m[35m (74.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (64.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1129579712809901430);[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-04-17 21:52:37.510426"], ["updated_at", "2017-04-17 21:52:37.510426"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1129579712809901430)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1129579712809901430);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20170417215800)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (59.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (32.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (32.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170417215800"]]
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1129579712809901430)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-04-17 19:16:48 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 49ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-04-17 19:17:04 -0300
+Processing by Devise::RegistrationsController#create as JS
+  Parameters: {"user"=>{"email"=>"hcifuentes@gmail.com", "password"=>"[FILTERED]", "passwordConfirmation"=>"[FILTERED]"}}
+Unpermitted parameter: :passwordConfirmation
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "hcifuentes@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "hcifuentes@gmail.com"], ["encrypted_password", "$2a$11$yyIji/5GgP6AFnTaEYias./H5x41Im.chWzhD.2TK6ujPgVdhWUXC"], ["created_at", "2017-04-17 22:17:05.002679"], ["updated_at", "2017-04-17 22:17:05.002679"]]
+  [1m[35m (19.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-04-17 22:17:05.024049"], ["last_sign_in_at", "2017-04-17 22:17:05.024049"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["updated_at", "2017-04-17 22:17:05.024519"], ["id", 1]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 200 OK in 228ms (ActiveRecord: 31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-17 19:17:05 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
