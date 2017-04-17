@@ -24,7 +24,7 @@ export class Signup extends Base{
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Credentials': true,
           'X-CSRF-Token' : window.inventory.token
-        
+
       },
     }).then(data => {
       console.log(data)
