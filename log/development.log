@@ -2573,3 +2573,439 @@ Processing by Authentication::SessionsController#create as JSON
 Completed 401 Unauthorized in 120ms (ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:11:46 -0300
+  [1m[35m (22.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 232ms (Views: 206.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for 127.0.0.1 at 2017-04-18 18:11:54 -0300
+Processing by Authentication::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"hcifuentes@nemesis.cl", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hcifuentes@nemesis.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-04-18 21:11:55.288979"], ["last_sign_in_at", "2017-04-18 12:22:53.038440"], ["sign_in_count", 6], ["updated_at", "2017-04-18 21:11:55.289872"], ["id", 2]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 300ms (Views: 0.7ms | ActiveRecord: 108.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:11:55 -0300
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-04-18 18:11:57 -0300
+Processing by Authentication::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1Y7YmQPqzySTf5YBC1/beCCSF/c4PVHQkbx4roSzPRpxr2xG+gGVk55DY4k60yAlNR0P4Ao9I0C5oXPnwCUdmQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 77ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:11:57 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:18:18 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:18:32 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:18:43 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:20:36 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1008ms (Views: 1007.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:36:53 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.6ms)
+Completed 200 OK in 1503ms (Views: 1501.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:37:20 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:37:32 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:39:05 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.5ms)
+Completed 200 OK in 1406ms (Views: 1405.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:39:38 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:39:54 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for 127.0.0.1 at 2017-04-18 18:40:28 -0300
+Processing by Authentication::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"hcifuentes@nemesis.cl", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hcifuentes@nemesis.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-04-18 21:40:28.445786"], ["last_sign_in_at", "2017-04-18 21:11:55.288979"], ["sign_in_count", 7], ["updated_at", "2017-04-18 21:40:28.446557"], ["id", 2]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 135ms (Views: 0.4ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:40:28 -0300
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-04-18 18:40:38 -0300
+Processing by Authentication::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Dsa7HRO1ogsyG0Xx2y8CJo7dTLn82k8jAChWMNGEIZDNJaW+qxHxJbID+hqKlcGvwUzUKAzCRHUkK1PfIMBO3g=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:40:38 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:41:02 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:41:15 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:41:30 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:41:40 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:42:41 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:46:10 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.6ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:46:19 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:46:41 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:46:51 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:47:07 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:47:22 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:47:33 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:47:53 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:48:48 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:49:21 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:49:37 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:50:18 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:50:26 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:50:33 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:51:04 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.4ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:52:16 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.2ms)
+Completed 200 OK in 1355ms (Views: 1353.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:55:20 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:55:44 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.2ms)
+Completed 200 OK in 1233ms (Views: 1232.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:55:53 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 1222ms (Views: 1221.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:56:05 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.4ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:56:21 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:57:28 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:58:22 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:58:38 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 1248ms (Views: 1247.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:58:48 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.0ms)
+Completed 200 OK in 1264ms (Views: 1263.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:59:26 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:59:38 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 18:59:59 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 19:00:13 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for 127.0.0.1 at 2017-04-18 19:02:06 -0300
+Processing by Authentication::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"hcifuentes@nemesis.cl", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hcifuentes@nemesis.cl"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 118ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in.json" for 127.0.0.1 at 2017-04-18 19:02:15 -0300
+Processing by Authentication::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"hcifuentes@nemesis.cl", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hcifuentes@nemesis.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-04-18 22:02:16.056557"], ["last_sign_in_at", "2017-04-18 21:40:28.445786"], ["sign_in_count", 8], ["updated_at", "2017-04-18 22:02:16.057322"], ["id", 2]]
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 138ms (Views: 0.4ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-18 19:02:16 -0300
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (1.1ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1129579712809901430);[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTrades (20170418221355)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1129579712809901430)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1129579712809901430);[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTrades (20170418221355)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (199.8ms)[0m  [1m[35mCREATE TABLE "trades" ("id" bigserial primary key, "name" character varying)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170418221355"]]
+  [1m[35m (14.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (18.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1129579712809901430)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1129579712809901430);[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTrades (20170418222022)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "trades" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1129579712809901430)[0m
