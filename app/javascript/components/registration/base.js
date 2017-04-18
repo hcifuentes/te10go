@@ -46,6 +46,10 @@ enableSubmitBtn(){
   });
 }
 
+reload(){
+  window.location.href = window.location.href;
+}
+
 syncFields(ev, fieldName){
   let element = ev.target;
   let value = element.value;

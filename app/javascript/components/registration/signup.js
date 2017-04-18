@@ -11,7 +11,7 @@ export class Signup extends Base{
 
   submit(){
     reqwest({
-      url:'/users',
+      url:'/users.json',
       method: 'POST',
       data: {
         user:{
@@ -27,7 +27,7 @@ export class Signup extends Base{
 
       },
     }).then(data => {
-      console.log(data)
+      this.reload();
     }).catch(err => console.log(err));
   }
 

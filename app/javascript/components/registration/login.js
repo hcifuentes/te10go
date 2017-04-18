@@ -11,17 +11,28 @@ export class Login extends Base{
 
   submit(){
     reqwest({
-      url:'/users/sign_in',
+      url:'/users/sign_in.json',
       method: 'POST',
       data: {
         user:{
           email: this.state.email,
           password : this.state.password
         }
+      },
+      headers:{
+          'X-CSRF-Token' : window.inventory.token
       }
     }).then(data => {
-      console.log(data)
-    }).catch(err => console.log(err));
+      this.reload();
+    }).catch(err => this.handleError(err));
+  }
+
+  handleError(err){
+    const errorMessage = JSON.parse(err.response).error;
+
+    this.setState({
+      error: errorMessage
+    })
   }
 
   render(){
@@ -32,7 +43,7 @@ export class Login extends Base{
             onValidSubmit={()=>this.submit()}
             onInvalid={()=> this.disableSubmitBtn()}>
           <div>
-            <p>{this.state.email}</p>
+
             <FormsyText
               onChange={(e)=> this.syncFields(e,"email")}
               name="email"
@@ -54,6 +65,7 @@ export class Login extends Base{
               type="password"
               floatingLabelText="Contraseña"
             />
+            <p>{this.state.error}</p>
           </div>
           <div>
             <RaisedButton
