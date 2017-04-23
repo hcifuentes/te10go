@@ -23,7 +23,11 @@ default: &default
 
 development:
   <<: *default
+<<<<<<< HEAD
   database: inventory_development
+=======
+  database: inventory_developmen
+>>>>>>> 67f9507c7c8a09c417f331808a96e00234ea66ba
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
