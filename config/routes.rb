@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :enterprises
+  resources :holdings
   devise_for :users, controllers:{
     sessions: 'authentication/sessions',
     registrations: 'authentication/registrations'

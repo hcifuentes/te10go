@@ -1,0 +1,16 @@
+= form_for @holding do |f|
+  - if @holding.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@holding.errors.count, "error")} prohibited this holding from being saved:"
+      %ul
+        - @holding.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :active
+    = f.check_box :active
+  .actions
+    = f.submit 'Save'

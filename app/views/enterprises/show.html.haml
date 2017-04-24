@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @enterprise.name
+%p
+  %b Active:
+  = @enterprise.active
+%p
+  %b Belongs to:
+  = @enterprise.belongs_to
+
+= link_to 'Edit', edit_enterprise_path(@enterprise)
+\|
+= link_to 'Back', enterprises_path
