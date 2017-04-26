@@ -5,7 +5,7 @@
     %tr
       %th Name
       %th Active
-      %th Belongs to
+      %th Holding
       %th
       %th
       %th
@@ -15,7 +15,7 @@
       %tr
         %td= enterprise.name
         %td= enterprise.active
-        %td= enterprise.belongs_to
+        %td= enterprise.holding
         %td= link_to 'Show', enterprise
         %td= link_to 'Edit', edit_enterprise_path(enterprise)
         %td= link_to 'Destroy', enterprise, :method => :delete, :data => { :confirm => 'Are you sure?' }

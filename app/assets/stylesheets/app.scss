@@ -15,7 +15,15 @@
 .full-page-height-vh{
   height: 100vh;
 }
-
+.navbar.main{
+  border-radius: 0px;
+  a{
+      color:white;
+      &:hover{
+        color:blue;
+      }
+  }
+}
 .padding{
   padding: 10px 15px
 }
