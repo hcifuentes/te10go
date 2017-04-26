@@ -4113,3 +4113,312 @@ Unpermitted parameter: :holding
 Completed 200 OK in 939ms (Views: 55.9ms | ActiveRecord: 645.5ms)
 
 
+  [1m[35m (222.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHolding Load (208.6ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (226.3ms)[0m  [1m[32mINSERT INTO "enterprises" ("name", "active", "holding_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "empresa 2"], ["active", "t"], ["holding_id", 1], ["created_at", "2017-04-26 02:44:55.690062"], ["updated_at", "2017-04-26 02:44:55.690062"]]
+  [1m[35m (208.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (8053.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHolding Load (232.6ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (215.6ms)[0m  [1m[32mINSERT INTO "enterprises" ("name", "active", "holding_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "empresa 2"], ["active", "t"], ["holding_id", 1], ["created_at", "2017-04-26 02:50:30.208166"], ["updated_at", "2017-04-26 02:50:30.208166"]]
+  [1m[35m (209.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/enterprises" for 127.0.0.1 at 2017-04-25 23:51:40 -0300
+  [1m[35m (216.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EnterprisesController#index as HTML
+  Rendering enterprises/index.html.haml within layouts/application
+  [1m[36mEnterprise Load (225.9ms)[0m  [1m[34mSELECT "enterprises".* FROM "enterprises"[0m
+  [1m[36mHolding Load (220.9ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered enterprises/index.html.haml within layouts/application (2121.1ms)
+  [1m[36mUser Load (225.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (763.0ms) [cache miss]
+Completed 200 OK in 3206ms (Views: 669.6ms | ActiveRecord: 2509.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-04-25 23:52:07 -0300
+Processing by Authentication::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iibRfH1NHjRGR3QuAFQC93FdhE7z4euSIMTLwkusp2vRUBMxX/2s0GPmebd+KykuqkAfefWkc6Ue9qIjZY5aoA=="}
+  [1m[36mUser Load (222.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (209.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (216.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 918ms (ActiveRecord: 648.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-25 23:52:08 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (3.7ms)
+  Rendered partials/_navigation.haml (4.5ms) [cache miss]
+Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-25 23:52:21 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (3.6ms)
+  Rendered partials/_navigation.haml (9.0ms) [cache miss]
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-25 23:52:22 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (3.6ms)
+  Rendered partials/_navigation.haml (4.5ms) [cache miss]
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-25 23:55:17 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (3.7ms)
+  Rendered partials/_navigation.haml (45.9ms) [cache miss]
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-25 23:55:42 -0300
+Processing by MainController#home as HTML
+  Rendering main/home.haml within layouts/application
+  Rendered main/home.haml within layouts/application (4.3ms)
+  Rendered partials/_navigation.haml (4.8ms) [cache miss]
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for 127.0.0.1 at 2017-04-25 23:55:56 -0300
+Processing by Authentication::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"hcifuentes@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1023.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "hcifuentes@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (238.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (236.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2017-04-26 02:55:58.655619"], ["last_sign_in_at", "2017-04-26 01:26:01.094876"], ["sign_in_count", 3], ["id", 1]]
+  [1m[35m (295.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 2471ms (Views: 1.4ms | ActiveRecord: 1793.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-25 23:55:59 -0300
+  [1m[36mUser Load (229.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (1.9ms)
+  Rendered partials/_navigation.haml (4.7ms) [cache miss]
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-26 00:01:38 -0300
+  [1m[36mUser Load (363.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (2.0ms)
+  Rendered partials/_navigation.haml (1017.8ms)
+Completed 500 Internal Server Error in 1055ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `enterprises' for #<#<Class:0x00000005381080>:0x0000000686efd8>
+Did you mean?  enterprises_url):
+    15:           %li
+    16:             %a Mantenedores
+    17:             %ul
+    18:               %li= link_to "enterprises", enterprises
+  
+app/views/partials/_navigation.haml:18:in `_app_views_partials__navigation_haml___1258854416526610622_45206580'
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___1839467482781426443_57575540'
+Started GET "/" for 127.0.0.1 at 2017-04-26 00:01:52 -0300
+  [1m[36mUser Load (229.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (2.2ms)
+  Rendered partials/_navigation.haml (9.1ms) [cache miss]
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-26 00:02:25 -0300
+  [1m[36mUser Load (220.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (3.5ms)
+  Rendered partials/_navigation.haml (7.2ms) [cache miss]
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enterprises" for 127.0.0.1 at 2017-04-26 00:04:12 -0300
+Processing by EnterprisesController#index as HTML
+  Rendering enterprises/index.html.haml within layouts/application
+  [1m[36mEnterprise Load (221.3ms)[0m  [1m[34mSELECT "enterprises".* FROM "enterprises"[0m
+  [1m[36mHolding Load (213.3ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered enterprises/index.html.haml within layouts/application (676.4ms)
+  [1m[36mUser Load (227.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (238.3ms) [cache miss]
+Completed 200 OK in 950ms (Views: 284.5ms | ActiveRecord: 662.6ms)
+
+
+Started GET "/enterprises" for 127.0.0.1 at 2017-04-26 00:04:21 -0300
+Processing by EnterprisesController#index as HTML
+  Rendering enterprises/index.html.haml within layouts/application
+  [1m[36mEnterprise Load (228.5ms)[0m  [1m[34mSELECT "enterprises".* FROM "enterprises"[0m
+  [1m[36mHolding Load (205.4ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.1ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.1ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered enterprises/index.html.haml within layouts/application (685.7ms)
+  [1m[36mUser Load (226.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (236.8ms) [cache miss]
+Completed 200 OK in 957ms (Views: 293.5ms | ActiveRecord: 660.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-26 00:04:57 -0300
+  [1m[36mUser Load (235.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (2.0ms)
+  Rendered partials/_navigation.haml (6.6ms) [cache miss]
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-26 00:05:11 -0300
+  [1m[36mUser Load (229.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (2.2ms)
+  Rendered partials/_navigation.haml (6.3ms) [cache miss]
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enterprises" for 127.0.0.1 at 2017-04-26 00:05:19 -0300
+Processing by EnterprisesController#index as HTML
+  Rendering enterprises/index.html.haml within layouts/application
+  [1m[36mEnterprise Load (231.0ms)[0m  [1m[34mSELECT "enterprises".* FROM "enterprises"[0m
+  [1m[36mHolding Load (224.6ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered enterprises/index.html.haml within layouts/application (700.8ms)
+  [1m[36mUser Load (260.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (272.2ms) [cache miss]
+Completed 200 OK in 1009ms (Views: 290.0ms | ActiveRecord: 716.5ms)
+
+
+Started GET "/enterprises" for 127.0.0.1 at 2017-04-26 00:05:27 -0300
+Processing by EnterprisesController#index as HTML
+  Rendering enterprises/index.html.haml within layouts/application
+  [1m[36mEnterprise Load (397.5ms)[0m  [1m[34mSELECT "enterprises".* FROM "enterprises"[0m
+  [1m[36mHolding Load (207.1ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.1ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered enterprises/index.html.haml within layouts/application (1134.2ms)
+  [1m[36mUser Load (221.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (231.7ms) [cache miss]
+Completed 200 OK in 1401ms (Views: 571.7ms | ActiveRecord: 826.5ms)
+
+
+Started GET "/enterprises" for 127.0.0.1 at 2017-04-26 00:05:31 -0300
+Processing by EnterprisesController#index as HTML
+  Rendering enterprises/index.html.haml within layouts/application
+  [1m[36mEnterprise Load (992.1ms)[0m  [1m[34mSELECT "enterprises".* FROM "enterprises"[0m
+  [1m[36mHolding Load (221.6ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.1ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered enterprises/index.html.haml within layouts/application (1886.6ms)
+  [1m[36mUser Load (250.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (260.2ms) [cache miss]
+Completed 200 OK in 2182ms (Views: 714.4ms | ActiveRecord: 1464.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-26 00:06:01 -0300
+  [1m[36mUser Load (222.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by MainController#dashboard as HTML
+  Rendering main/dashboard.haml within layouts/application
+  Rendered main/dashboard.haml within layouts/application (2.3ms)
+  Rendered partials/_navigation.haml (7.6ms) [cache miss]
+Completed 200 OK in 55ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/holdings" for 127.0.0.1 at 2017-04-26 00:06:06 -0300
+Processing by HoldingsController#index as HTML
+  Rendering holdings/index.html.haml within layouts/application
+  [1m[36mHolding Load (344.5ms)[0m  [1m[34mSELECT "holdings".* FROM "holdings"[0m
+  Rendered holdings/index.html.haml within layouts/application (796.3ms)
+  [1m[36mUser Load (214.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (225.4ms) [cache miss]
+Completed 200 OK in 1058ms (Views: 495.2ms | ActiveRecord: 558.5ms)
+
+
+Started GET "/enterprises" for 127.0.0.1 at 2017-04-26 00:06:11 -0300
+Processing by EnterprisesController#index as HTML
+  Rendering enterprises/index.html.haml within layouts/application
+  [1m[36mEnterprise Load (231.5ms)[0m  [1m[34mSELECT "enterprises".* FROM "enterprises"[0m
+  [1m[36mHolding Load (219.6ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered enterprises/index.html.haml within layouts/application (701.8ms)
+  [1m[36mUser Load (226.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (236.4ms) [cache miss]
+Completed 200 OK in 975ms (Views: 294.6ms | ActiveRecord: 677.2ms)
+
+
+Started GET "/holdings" for 127.0.0.1 at 2017-04-26 00:06:14 -0300
+Processing by HoldingsController#index as HTML
+  Rendering holdings/index.html.haml within layouts/application
+  [1m[36mHolding Load (230.2ms)[0m  [1m[34mSELECT "holdings".* FROM "holdings"[0m
+  Rendered holdings/index.html.haml within layouts/application (463.9ms)
+  [1m[36mUser Load (214.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (225.2ms) [cache miss]
+Completed 200 OK in 723ms (Views: 275.7ms | ActiveRecord: 444.4ms)
+
+
+Started GET "/enterprises" for 127.0.0.1 at 2017-04-26 00:06:16 -0300
+Processing by EnterprisesController#index as HTML
+  Rendering enterprises/index.html.haml within layouts/application
+  [1m[36mEnterprise Load (227.4ms)[0m  [1m[34mSELECT "enterprises".* FROM "enterprises"[0m
+  [1m[36mHolding Load (216.2ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.1ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.1ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered enterprises/index.html.haml within layouts/application (705.4ms)
+  [1m[36mUser Load (243.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (253.9ms) [cache miss]
+Completed 200 OK in 998ms (Views: 308.3ms | ActiveRecord: 686.7ms)
+
+
+Started GET "/enterprises" for 127.0.0.1 at 2017-04-26 00:06:20 -0300
+Processing by EnterprisesController#index as HTML
+  Rendering enterprises/index.html.haml within layouts/application
+  [1m[36mEnterprise Load (512.8ms)[0m  [1m[34mSELECT "enterprises".* FROM "enterprises"[0m
+  [1m[36mHolding Load (216.8ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Holding Load (0.0ms)[0m  [1m[34mSELECT  "holdings".* FROM "holdings" WHERE "holdings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered enterprises/index.html.haml within layouts/application (1142.1ms)
+Started GET "/holdings" for 127.0.0.1 at 2017-04-26 00:06:22 -0300
+Processing by HoldingsController#index as HTML
+  Rendering holdings/index.html.haml within layouts/application
+  [1m[36mUser Load (210.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (221.2ms) [cache miss]
+Completed 200 OK in 1396ms (Views: 453.4ms | ActiveRecord: 940.2ms)
+
+
+  [1m[36mHolding Load (209.6ms)[0m  [1m[34mSELECT "holdings".* FROM "holdings"[0m
+  Rendered holdings/index.html.haml within layouts/application (4172.4ms)
+  [1m[36mUser Load (222.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (233.6ms) [cache miss]
+Completed 200 OK in 4441ms (Views: 2732.2ms | ActiveRecord: 1706.3ms)
+
+
+Started GET "/holdings" for 127.0.0.1 at 2017-04-26 00:06:45 -0300
+Processing by HoldingsController#index as HTML
+  Rendering holdings/index.html.haml within layouts/application
+  [1m[36mHolding Load (229.0ms)[0m  [1m[34mSELECT "holdings".* FROM "holdings"[0m
+  Rendered holdings/index.html.haml within layouts/application (477.1ms)
+  [1m[36mUser Load (232.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (244.8ms) [cache miss]
+Completed 200 OK in 759ms (Views: 294.6ms | ActiveRecord: 461.6ms)
+
+
+Started GET "/holdings" for 127.0.0.1 at 2017-04-26 00:10:02 -0300
+Processing by HoldingsController#index as HTML
+  Rendering holdings/index.html.haml within layouts/application
+  [1m[36mHolding Load (239.0ms)[0m  [1m[34mSELECT "holdings".* FROM "holdings"[0m
+  Rendered holdings/index.html.haml within layouts/application (581.1ms)
+  [1m[36mUser Load (202.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_navigation.haml (212.9ms) [cache miss]
+Completed 200 OK in 829ms (Views: 385.2ms | ActiveRecord: 441.3ms)
+
+

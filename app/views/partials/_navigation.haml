@@ -1,8 +1,19 @@
-%nav.navbar.main
-  .container-fluid.bg-color-blue-600
-    .navbar-header
-    .collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        %li= link_to "Inicio",root_path
-        -if user_signed_in?
+-if user_signed_in?
+  %nav.navbar.main
+    .container-fluid.bg-color-blue-600
+      .navbar-header
+      .collapse.navbar-collapse
+        %ul.nav.navbar-nav
+          %li= link_to "Inicio", root_path
           %li=link_to "Cerrar sesión", destroy_user_session_path, method: :delete
+-if user_signed_in?
+  %navlateral.sidebar-nav
+    %nav2.navbar.navbar-default
+      .navbar-header
+      .navbar-collapse.collapse.sidebar-navbar-collapse
+        %ul.nav.navbar-nav
+          %li
+            %a Mantenedores
+            %ul
+              %li= link_to "Empresas", enterprises_url
+              %li= link_to "Holdings", holdings_url
