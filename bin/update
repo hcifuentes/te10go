@@ -17,10 +17,6 @@ chdir APP_ROOT do
   puts '== Installing dependencies =='
   system! 'gem install bundler --conservative'
   system('bundle check') || system!('bundle install')
-<<<<<<< HEAD
-
-=======
->>>>>>> 67f9507c7c8a09c417f331808a96e00234ea66ba
   puts "\n== Updating database =="
   system! 'bin/rails db:migrate'
 
